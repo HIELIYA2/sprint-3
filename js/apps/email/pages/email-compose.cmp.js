@@ -23,7 +23,6 @@ export default {
                         </div>
                         
                         <button @click="emailSend" tag="a"> <input class="btn-Contact" type="button" value="Send" /></button>
-                        <!-- <router-link to="/emails/"> <input class="btn-Contact" type="button" value="Send" @click="emailSend" /></router-link> -->
                     </form>
                 </section>
         </section>
@@ -42,11 +41,9 @@ export default {
         setEmails(){
             emailServices.getEmails().then(emails=>{
                 this.emails = emails
-                // console.log(this.emails)
             })
         },
         emailSend(){
-            // debugger
             emailServices.newEmail(this.newEmail)
             this.setEmails()
             this.$emit('emailSended')
@@ -57,14 +54,11 @@ export default {
         emailMenu
     },
     computed: {
-       
     },
     created() {
-        // this.setEmails()
     },
     watch: {
         'emails': function() {
-            // this.setEmails()
         }
     }
 }

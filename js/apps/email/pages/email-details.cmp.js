@@ -1,11 +1,7 @@
 import emailServices from '../services/email.service.js'
-// import emailMenu from '../cmps/email-menu.cmp.js';
-
 
 export default {
-
     template: `
-       
         <section v-if="email" class="email-details-container">  
         <router-link to="/emails/"><button class="btn-x-Contact"><i class="fa fa-times-circle"></i></button></router-link> 
                 <h1 class="email-details-title">email-details</h1>
@@ -28,25 +24,20 @@ export default {
     methods: {
         getEmail(id) {
             emailServices.getEmailById(id).then(email => {
-                console.log(email)
                 this.email = email;
                 this.getTime()
-
-
             })
         },
         getTime() {
-                var timeStemp = this.email.sentAt;
-                var hours = new Date(timeStemp).getHours()
-                var mins = new Date(timeStemp).getMinutes()
-                this.time = `${hours}:${mins}`
+            var timeStemp = this.email.sentAt;
+            var hours = new Date(timeStemp).getHours()
+            var mins = new Date(timeStemp).getMinutes()
+            this.time = `${hours}:${mins}`
         },
     },
     components: {
-        // emailMenu
     },
     computed: {
-
     },
     created() {
         const emailId = this.$route.params.emailId

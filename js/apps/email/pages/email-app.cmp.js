@@ -9,7 +9,7 @@ export default {
     props: [],
     template: `
                 <section class="email-app">
-                <br/> <br/>
+                <br/><br/>
                 <input v-if="emails" class="search-input-email" v-model="input" @keyup="setFilterd" type="text" placeholder="Search A email...">
                 <email-menu @filterUnReads="filterUnReads" 
                             @filterStarred="filterStarred"

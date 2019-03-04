@@ -14,7 +14,7 @@ html {
 ul {
     list-style-type: none;
 }
-* {
+*{
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -65,8 +65,6 @@ button{
         padding-bottom: 35px;
     }
 }
-
-/* _______________________________________ */
 
 /* nav bar */
 .nav-bar-app {
@@ -128,12 +126,10 @@ button{
     }
   }
   
-/* ___________________________________ */
 /* EMAIL APP  */
-
 /* inbux page */
+
 .email-app {
-/* background-color: rgb(196, 19, 19); */
     object-fit: cover;
     width: 100%;
     height: 92vh ; 
@@ -145,6 +141,7 @@ button{
 .email-conteiner {
     width: 100%;
 }
+
 .title-email-list{
     font-weight: bold;
     min-height: 38px;
@@ -165,9 +162,11 @@ button{
     font-size: 20px;
     font-family: Raleway-Regular;
 }
+
 .title-email-list-1:hover{
     cursor: pointer;
  }
+
 .email-menu {
     float: left;
     width: 20%;
@@ -175,7 +174,7 @@ button{
 }
 
 .email-list-container{
-display: grid;
+    display: grid;
 }
 
 .li-email-list {
@@ -217,7 +216,6 @@ display: grid;
     margin-right: 10px;
     align-self: center;
 }
-
 
 @media (min-width: 430px) {
     .logo-home-app{
@@ -285,12 +283,15 @@ display: grid;
     align-items: center;
     justify-content: space-between;
 }
+
 .subject,.from{
     width: 50vw;
 }
+
 .btns-prev{
     display: flex;
 }
+
 .btn-prev {
     margin-left: 2px;
     color: rgb(143, 143, 143);
@@ -307,6 +308,7 @@ display: grid;
     background-color: rgb(0, 0, 0);
    
 }
+
 .btn-un-read{
     font-size: 20px;
     color: rgb(85, 85, 85);
@@ -315,9 +317,11 @@ display: grid;
     padding: 0px;
     transition: 0.3s;
 }
+
 .btn-un-read:hover{
     color: rgb(0, 0, 0);
 }
+
 .btn-un-star{
     font-size: 20px;
     color: rgb(85, 85, 85);
@@ -327,22 +331,25 @@ display: grid;
     transition: 0.3s;
 }
 
-
 .env-unread{
     color: rgb(187, 187, 187);
     transition: 0.3s;
 
 }
+
 .env-unread:hover{
     color: rgb(117, 117, 117);
 }
+
 .un-stared{
     color: rgb(187, 187, 187);
     transition: 0.3s;
 }
+
 .un-stared:hover{   
      color: rgb(209, 212, 13);
 }
+
 .stared{
     color: rgb(209, 212, 13);
     transition: 0.3s;
@@ -350,8 +357,6 @@ display: grid;
 .stared:hover{
     color: rgb(187, 187, 187)
 }
-
-
 
 /* email details */
 .email-details-container{
@@ -366,9 +371,11 @@ display: grid;
     font-size: 25px;
     margin-bottom: 5%;
 }
+
 .email-details-info{
     margin-bottom: 20px
 }
+
 .email-details-info-container{
     width: 70vw;
     color: rgb(34, 34, 34);
@@ -386,6 +393,7 @@ display: grid;
     display: flex;
     flex-direction: column;
 }
+
 .new-email-txt-title{
     font-size: 25px;
     color: rgb(31, 30, 30);
@@ -393,22 +401,26 @@ display: grid;
     flex-direction: column;
     align-self: center;
 }
+
 .new-email-txt{
 font-size: 20px;
 color: rgb(20, 20, 20);
 margin-right: 10px;
 }
+
 .new-email-filed{
     display: flex;
     margin-bottom: 5px;
     line-height: 50px;
 
 }
+
 .message{
     /* border: #8c8b8b 3px solid; */
     width: 60vw;
     margin: 0 auto;
 }
+
 .mailName,.mailSubject{
     width: 100%;
     background-color: rgba(148, 148, 148, 0);
@@ -417,6 +429,7 @@ margin-right: 10px;
     border-bottom: 1px solid rgb(56, 55, 55);
     padding: 5px 5px 0 5px;
 }
+
 .mailTxt{
     margin-top: 5px;
     line-height: 40px;
@@ -427,18 +440,22 @@ margin-right: 10px;
     border:  1px solid rgb(56, 55, 55);
     padding: 5px 5px 0 5px;
 }
+
 .mailName::placeholder{
     font-size: 14px;
     color: rgb(92, 92, 92);
 }
+
 .mailTxt::placeholder{
     font-size: 14px;
     color: rgb(92, 92, 92);
 }
+
 .mailSubject::placeholder{
     font-size: 14px;
     color: rgb(92, 92, 92);
 }
+
 .btn-Contact{
     background-color: rgb(34, 34, 34);
     font-size: 22px;
@@ -450,11 +467,13 @@ margin-right: 10px;
     display: flex;
     justify-self: flex-end;
 }
+
 .btn-Contact:hover{
     background-color: rgb(209, 209, 209);
     color:  rgb(247, 3, 3);
     box-shadow: 0px 0px 4px 4px rgba(255, 0, 0, 0.459);
 }
+
 .btn-x-Contact{
    position: absolute;
    right: 4px;
@@ -465,6 +484,7 @@ margin-right: 10px;
     color:  rgb(66, 66, 66);
     transition: 0.3s;
 }
+
 .btn-x-Contact:hover{
     color:  rgb(24, 24, 24);
 }
@@ -486,6 +506,7 @@ margin-right: 10px;
     background-color: rgba(255, 255, 255, 0);
     margin-top: 10px;
 }
+
 .email-menu-btn{
     margin-top: 10px;
     background-color: rgb(0, 0, 0);
@@ -496,6 +517,7 @@ margin-right: 10px;
     border-radius: 40px;
     border: 1px solid rgb(96, 146, 255);
 }
+
 .email-menu-btn:hover{
     background-color: rgb(0, 0, 0);
     color:  rgb(129, 169, 255);
@@ -510,12 +532,14 @@ margin-right: 10px;
     transition: 0.3s;
     border: 1px solid rgba(28, 80, 87, 0);
 }
+
 .email-menu-li:hover{
     color: rgb(14, 13, 13);
     border-radius: 40px;
     background-color: rgba(12, 28, 31, 0.164);
 
 }
+
 .email-menu-li-word{
     display: none;
 }
@@ -525,6 +549,7 @@ margin-right: 10px;
     width: 100%;
     padding: 10px 12px;
 }
+
 .unread-sum{
     padding: 0 4px;
     border: 1px solid rgb(87, 1, 1);
@@ -544,25 +569,22 @@ margin-right: 10px;
     .email-menu-li-word{
         display: unset;
     }
-   
 }
 @media (min-width: 690px) {
-    
     .email-menu-li-word{
         font-size: 18px    
     }
 }
 
-/* ______________________________________ */
 /* KEEP */
 /* keep app */
-
 
 .keep-app{
     height: 92vh;
     width: 100%;
     background-color: white;
 }
+
 .search-input{
     font-size: 1.1em;
     top: 1.5%;
@@ -573,6 +595,7 @@ margin-right: 10px;
     border-radius: 5px;
     width: 30vw; 
 }
+
 .search-input-email{
     font-size: 1.1em;
     top: 1.5%;
@@ -595,7 +618,6 @@ margin-right: 10px;
     align-self: center;
 }
 
-
 /* keep note */
 
 .keep-note{
@@ -612,24 +634,29 @@ margin-right: 10px;
     transition: 0.3s;
     border-radius: 5px;
 }
+
 .keep-note:hover{
     cursor: pointer;
     box-shadow: 0px 0px 7px 2px rgba(240, 248, 125, 0.651);
 }
+
 .note-header{
     padding: 5px;
     height: 20%;
     font-size: 10px;
     text-align: end
 }
+
 .note-body{
     cursor: pointer;
     padding: 5px;
     height: max-content;
 }
+
 .keep-img{
     width: 240px;
 }
+
 .note-body, .keep-img {
     margin: 0 auto;
 }
@@ -652,11 +679,13 @@ padding: 5px 5px;
     color: #ff0000;
     background-color: rgba(255, 255, 255, 0)
 }
+
 .pinned{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .unpinned{
     justify-content: center;
     display: flex;
@@ -670,7 +699,6 @@ hr{
     height: 1px; 
     background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
-
 
 /* keep edit */
 .choose-color{
@@ -741,6 +769,7 @@ hr{
     border: 1px solid rgb(255, 241, 44);
     transition: 0.8s;
 }
+
 .bg-yellow:hover{
     background-color:rgb(255, 241, 44);
 }
@@ -750,9 +779,11 @@ hr{
     font-size: 16px;
     padding: 10px;
 }
+
 textarea{
     max-width:  95%;
 }
+
 .bts-keep-edit{
     display: flex;
     align-items: center;
@@ -767,6 +798,7 @@ textarea{
     padding: 10px;
     transition: 0.3;
 }
+
 .keep-edit button:hover{
 color: rgb(15, 15, 15);
 }
@@ -825,27 +857,26 @@ color: rgb(15, 15, 15);
 }
 
 @media (min-width: 540px) {
-   
-.input-add input{
-    margin-bottom: 0;
-}
-.keep-note{
-    position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    width: 250px;
-}
-.keep-add{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 500px;
-    height: 40px;
-}
-.input-add{
-    margin-left: 5px;
-    width: 60%;
-}
+    .input-add input{
+        margin-bottom: 0;
+    }
+    .keep-note{
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        width: 250px;
+    }
+    .keep-add{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 500px;
+        height: 40px;
+    }
+    .input-add{
+        margin-left: 5px;
+        width: 60%;
+    }
 }
 
 .btn-add{
@@ -872,26 +903,4 @@ color: rgb(15, 15, 15);
 
 .btn-add-trash:hover{
     color: black;
-}
-
-/*_________________________*/
-/* MEDIA MOBILE */
-@media (max-width: 550px) {
-    
-}
-@media (max-width: 655px) {
-  
-}
-/*_________________________*/
-/* MEDIA MIDDLE */
-@media (min-width: 550px) {
-  
-}
-/*_________________________*/
-/* MEDIA MIDDLE */
-
-/*_________________________*/
-/* MEDIA DESKTOP */
-@media (min-width: 893px) {
- 
 }
